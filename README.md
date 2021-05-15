@@ -1,11 +1,12 @@
-## Day Four / 30 days of React challenge / Country Flags
+## Day Eight / 30 days of React challenge / Dokidoki Tea Shop
 
 <p  align="center">
-<img  src="https://media.giphy.com/media/3o7TKv7S69WRS6awc8/giphy.gif"  height="180" alt="flags">
+<img  src="https://media.giphy.com/media/7SZzZO5EG1S6QLJeUL/giphy.gif"  height="180" alt="tea">
 </p>
 
 ## Features :unicorn: 
-* Click the button to reveal the flags
+* Choose your tea
+* Pay the bill 
 
 ## Technologies :mag_right:
 * React :sparkles:

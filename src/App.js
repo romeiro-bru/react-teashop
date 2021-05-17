@@ -36,22 +36,18 @@ const menu = [
 
 export default function App() {
   const [total, setTotal] = useState([0]);
-  console.log(`total: ${total}`);
+  // console.log(`total: ${total}`);
 
   const handleAdd = (e) => {
-    // let initBill = total;
-    // let addToBill = e.target.value;
-    // let finalBill = initBill + addToBill;
+    let initBill = +total;
+    let addToBill = +e.target.value;
+    let finalBill = initBill + addToBill;
 
-    // setTotal(finalBill);
-    let bill = [...total, e.target.value];
-    console.log(e.target.value);
-    console.log(`bill: ${bill}`);
+    setTotal(finalBill);
   };
 
   const handleClick = () => {
     setTotal(0);
-    console.log("pay bill");
   };
 
   return (

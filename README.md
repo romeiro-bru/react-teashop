@@ -13,4 +13,4 @@
 * Css :nail_care:
 
 #
-Inspired by: [“Fruit Facts”](https://github.com/graceaveris/React.js_fruit_fact_revealer) of [@graceaveris](https://github.com/graceaveris)
+Inspired by: ["Drink Order"](https://github.com/graceaveris/React.js_drink_order_POS_system) of [@graceaveris](https://github.com/graceaveris)

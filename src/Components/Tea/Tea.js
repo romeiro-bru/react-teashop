@@ -44,7 +44,11 @@ export function Tea() {
     setTotal(finalBill);
   };
 
-  const handleDecrement = (e) => {};
+  const handleDecrement = (e) => {
+    let itemPrice = Number.parseFloat(e.target.value);
+    let finalBill = total - itemPrice;
+    return finalBill >= 0 ? setTotal(finalBill) : total;
+  };
 
   const handleClick = () => {
     setTotal(0);

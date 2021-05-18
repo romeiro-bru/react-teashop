@@ -7,7 +7,7 @@ export function Bill({ total, setTotal }) {
 
   return (
     <>
-      <p>Total price: </p>
+      <p>Total: </p>
       <span>R$ {total}</span>
       <br />
       <button onClick={handleClick}>Pay Bill</button>

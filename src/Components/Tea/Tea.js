@@ -61,7 +61,7 @@ export function Tea() {
             <p>{item.ingredients}</p>
             <p>R$ {item.price}</p>
             <button value={item.price} onClick={handleAdd}>
-              Add
+              Order
             </button>
           </li>
         ))}

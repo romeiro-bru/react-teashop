@@ -37,15 +37,18 @@ const menu = [
 ];
 
 export function Tea() {
-  const [total, setTotal] = useState([0]);
-  // console.log(`total: ${total}`);
+  const [total, setTotal] = useState(0);
 
   const handleAdd = (e) => {
-    let initBill = +total;
-    let addToBill = +e.target.value;
-    let finalBill = initBill + addToBill;
-
+    const itemPrice = Number.parseFloat(e.target.value);
+    const finalBill = total + itemPrice;
     setTotal(finalBill);
+  };
+
+  const handleDecrement = (e) => {
+    const itemPrice = Number.parseFloat(e.target.value);
+    const finalBill = total - itemPrice;
+    finalBill >= 0 ? setTotal(finalBill) : setTotal(total);
   };
 
   return (
@@ -60,8 +63,11 @@ export function Tea() {
             </p>
             <p>{item.ingredients}</p>
             <p>R$ {item.price}</p>
+            <button value={item.price} onClick={handleDecrement}>
+              -
+            </button>
             <button value={item.price} onClick={handleAdd}>
-              Order
+              +
             </button>
           </li>
         ))}

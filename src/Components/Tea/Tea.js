@@ -63,6 +63,7 @@ export function Tea() {
               <img src={item.img} alt="tea" />
               {item.name}
             </p>
+            <p>{item.ingredients}</p>
             <p>R$ {item.price}</p>
             <button value={item.price} onClick={handleDecrement}>
               -

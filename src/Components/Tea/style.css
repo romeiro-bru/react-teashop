@@ -16,6 +16,10 @@ h2 {
   padding: 0rem 0.7rem 0.3rem 0.7rem;
 }
 
+.tea-menu p:nth-child(2) {
+  font-size: 0.8rem;
+}
+
 .tea-menu img {
   width: 1.8rem;
   margin-bottom: -0.4rem;
